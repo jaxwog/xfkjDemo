@@ -1,0 +1,54 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/back_before"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/back"
+            android:text="压力水平自测"
+            android:gravity="center"
+            android:onClick="click"
+            android:textColor="#000000"
+            android:background="#1bb5db"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/press_pic"
+            />
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="       生活中，我们每一个人都在经历着不同内容、不同程度的压力。以下列出的一些项目都是人们在面临压力时常见的反应，对照自己的实际情况进行选择。"            />
+        <Button
+            android:id="@+id/test"
+            android:background="@drawable/press_button_lan"
+            android:text="开始测试"
+            android:onClick="click"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cecece">
+    <Button
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1bb5db"
+        android:onClick="click"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/back"
+        android:text="快捷电话" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/title1"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的病症是："
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100人"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_toLeftOf="@id/people"
+            android:src="@drawable/ic_launcher"
+
+
+
+            />
+    </RelativeLayout>
+    <EditText
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/content"
+        android:layout_below="@id/title1"
+        android:layout_width="match_parent"
+        android:lines="5"
+        android:layout_height="wrap_content"
+        android:hint="请输入你的病症"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        />
+    <TextView
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="你的电话号码是："
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:id="@+id/title2"
+        />
+    <EditText
+        android:id="@+id/phone"
+        android:background="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入你的电话号码："
+        android:gravity="center"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/title3"
+        android:layout_below="@id/phone"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="仅需15元，不限通话时长"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+    />
+    <Button
+        android:id="@+id/tijiao"
+        android:layout_below="@id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1bb5db"
+        android:text="发起快捷电话"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal|center_vertical"
+
+        />
+
+</RelativeLayout>

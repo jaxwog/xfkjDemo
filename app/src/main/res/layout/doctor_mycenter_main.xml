@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="医生"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="21dp"
+        android:background="#1bb5db"
+        android:layout_alignParentTop="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/tijiao"
+        android:layout_below="@id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/title"
+        android:gravity="center|center_vertical"
+        android:background="#1bb5db"
+        >
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎张三医生"
+            android:textColor="#ffffff"
+            android:gravity="center|center_vertical"
+            android:id="@+id/name"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/ziliao"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="个人资料"
+        android:drawableRight="@drawable/doc_ziliao"
+        android:onClick="click"
+        android:drawablePadding="10dp"
+        android:textSize="16dp"
+        android:background="#ffffff"
+        android:gravity="center"
+    />
+    </RelativeLayout>
+        <com.xfkj.mrxuyaohui.xfkjdemo.util.image.SmartImageView
+            android:onClick="click"
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="50dp"
+            />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tijiao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="我的消息"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:background="@drawable/press_button_lan"
+            android:drawableLeft="@drawable/yisheng_1"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/pingjia"
+            android:layout_marginTop="80dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="我的评价"
+            android:drawableLeft="@drawable/yisheng_2"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:onClick="click"
+            android:paddingLeft="10dp"
+            android:background="@drawable/press_button_lan"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            />
+        </LinearLayout>
+    <!--<com.xfkj.mrxuyaohui.xfkjdemo.self_define.RoundImageView-->
+
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/right_login_head"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/xinwen" />-->
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="退出登录"
+        android:onClick="click"
+        android:background="@drawable/press_button_lan"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/login_button_selector"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:id="@+id/image"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.xfkj.mrxuyaohui.xfkjdemo.util.image.SmartImageView
+        android:id="@+id/tupian"
+        android:layout_width="60dip"
+        android:layout_height="50dip"
+        android:src="@drawable/ic_launcher" />
+        <TextView
+            android:layout_below="@id/tupian"
+            android:id="@+id/pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价等级"
+            android:textColor="@android:color/black"
+            ></TextView>
+        <RatingBar
+            android:id="@+id/rating"
+            android:numStars="5"
+            android:rating="1.5"
+            android:layout_below="@id/pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            ></RatingBar>
+        </RelativeLayout>
+
+
+    <TextView
+        android:paddingTop="20dp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_toRightOf="@id/image"
+        android:singleLine="true"
+        android:text="张三"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+    <TextView
+        android:id="@+id/zhiwu"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@id/name"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="心理学专家"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/gongzuo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/name"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/black"
+
+        android:paddingLeft="20dp"
+        android:text="解放军医院"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/zhuzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/gongzuo"
+       android:paddingTop="2dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:text="主治：抑郁症"
+        android:textSize="14sp" />
+    <LinearLayout
+        android:id="@+id/shuoming"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/name"
+        android:layout_below="@id/zhuzhi"
+        android:layout_marginTop="2dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" >
+        <TextView
+            android:text="图文咨询-20元"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:drawableLeft="@drawable/xinxi"/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:text="电话咨询-20元"
+            android:layout_marginLeft="5dp"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/dianhua"/>
+        </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#cecece"
+        android:layout_below="@id/shuoming"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+        <TextView
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:text="诊断"
+            android:textColor="#000000"
+            android:textSize="21dp"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:background="#1bb5db"
+            />
+    <Button
+        android:id="@+id/ceping"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:drawableLeft="@drawable/xinliceping"
+        android:text="心理测评"
+        android:onClick="onClick"
+        android:gravity="center_horizontal|center_vertical"
+        android:drawableRight="@drawable/xiangyou"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/login_button_selector"/>
+    <View
+        android:layout_below="@id/ceping"
+        android:layout_height="1dip"
+        android:background="#cecece"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/line1"
+        />
+    <Button
+        android:id="@+id/genduo"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:drawableLeft="@drawable/gengduo"
+        android:text="更多敬请期待"
+        android:onClick="onClick"
+        android:textSize="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:drawableRight="@drawable/xiangyou"
+        android:layout_below="@+id/line1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/login_button_selector"/>
+    <View
+        android:layout_below="@id/genduo"
+        android:layout_height="1dip"
+        android:background="#cecece"
+        android:layout_width="fill_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

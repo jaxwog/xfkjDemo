@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_button_selector"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/time"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="2015-10-24"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#000000"
+
+        android:id="@+id/name"
+        android:text="和张三医生的聊天"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        />
+    <Button
+        android:background="@drawable/press_button_lan"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/detail"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="评价"
+        android:layout_marginRight="10dp"
+
+        />
+
+</LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ececec"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            />
+    </LinearLayout>
+    </ScrollView>

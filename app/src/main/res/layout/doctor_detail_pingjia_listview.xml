@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_button_selector"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        >
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNum"
+        android:textColor="#000000"
+        android:text="1332371****"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星级评价："
+            android:textColor="#000000"
+
+
+            />
+        <RatingBar
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/rating"
+            android:numStars="5"
+            android:rating="1"
+            android:layout_below="@id/pingjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            ></RatingBar>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:lines="1"
+        android:textColor="#000000"
+
+        android:text="医生的技术非常的高明"
+        />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/desc"
+        android:layout_height="1px"
+        android:background="#cecece"
+        android:layout_width="fill_parent"></View>
+</LinearLayout>

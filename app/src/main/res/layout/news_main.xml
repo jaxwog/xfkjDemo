@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/title"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="新闻"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="#1bb5db"
+            />
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/image_news"/>
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_news"
+            android:background="#33000000"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/new_image_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+
+                />
+            <LinearLayout
+                android:id="@+id/new_point_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                />
+        </LinearLayout>
+        <com.xfkj.mrxuyaohui.xfkjdemo.self_define.NoScrollListView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/main"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:id="@+id/list"/>
+        <TextView
+            android:layout_below="@+id/main"
+            android:id="@+id/empty"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:textColor="#cecece"
+            android:text="联网失败，请重试！"/>
+
+
+    </RelativeLayout>
+</ScrollView>

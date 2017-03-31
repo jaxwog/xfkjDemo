@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:background="#ffffff">
+	
+    <LinearLayout
+        android:id="@id/title"
+        android:orientation="horizontal" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="150dip"
+	    android:background="#1bb5db">
+    </LinearLayout>	
+
+  
+<RelativeLayout
+        android:id="@+id/title1"
+        android:layout_below="@id/title"
+        android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	     android:layout_marginTop="30dip">
+
+    <TextView
+        android:id="@+id/shoujihao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:drawableLeft="@drawable/id"
+        android:gravity="center" 
+        android:layout_marginLeft="22dip"/>
+
+  <EditText
+      android:layout_toRightOf="@id/shoujihao"
+      android:layout_marginLeft="30dp"
+      android:id="@+id/peo_phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:ems="11"
+
+      android:hint="手机号"
+      android:textSize="15dip"
+      android:inputType="phone" 
+      android:phoneNumber="true"
+      android:layout_marginRight="22dip">
+      <requestFocus />
+  </EditText>t
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/title2"
+    android:layout_below="@id/title1"
+         android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	     android:layout_marginTop="30dip">
+
+    <TextView
+        android:id="@+id/mima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:drawableLeft="@drawable/password"
+        android:gravity="center" 
+        android:layout_marginLeft="22dip"/>
+  <EditText
+      android:layout_toRightOf="@id/mima"
+      android:layout_marginLeft="30dp"
+      android:id="@+id/peo_pas"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="22dip"
+      android:layout_weight="1"
+      android:ems="11"
+      android:hint="密码"
+      android:password="true"
+      android:textSize="15dip" />
+
+</RelativeLayout>
+
+
+     <Button
+    android:id="@+id/peo_login"
+    android:layout_width="230dip"
+    android:layout_height="50dip"
+    android:text="用户登录"
+    android:onClick="clickListener"
+    android:gravity="center"
+    android:layout_marginTop="45dp"
+    android:layout_below="@+id/title2"
+    android:background="@drawable/press_button_lan"
+    android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/doc_login"
+        android:layout_width="230dip"
+        android:layout_height="50dip"
+        android:text="医生登录"
+        android:onClick="clickListener"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/peo_login"
+        android:background="@drawable/press_button_lan"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/peo_miss"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="忘记密码？"
+        android:textSize="15dip"
+        android:textColor="#000000"
+        android:onClick="clickListener"
+        android:background="@drawable/login_button_selector"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/doc_login"
+        android:layout_alignLeft="@+id/peo_login"
+        android:layout_alignStart="@+id/peo_login" />
+
+    <Button
+        android:id="@+id/peo_zhuce"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="快速注册"
+        android:background="@drawable/login_button_selector"
+        android:textSize="15dip"
+        android:onClick="clickListener"
+        android:layout_below="@+id/doc_login"
+        android:layout_alignRight="@+id/peo_login" />
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 定义TabHost组件 -->
+
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@+id/msg_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/tv_wb"
+                android:text="注册"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                android:onClick="click"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/back"
+                android:background="#1bb5db" >
+            </Button>
+        </FrameLayout>
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/radio_button0"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2.0dip"
+                android:text="医生注册"/>
+            <RadioButton
+                android:id="@+id/radio_button1"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="2.0dip"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:gravity="center_vertical|center_horizontal"
+                android:tag="radio_button1"
+                android:checked="true"
+                android:text="用户注册" />
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cecece"
+
+            />
+        <FrameLayout
+            android:layout_marginTop="10dp"
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/title"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/peo_phone"
+                    android:drawableLeft="@drawable/forget_phone"
+                    android:drawablePadding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="11"
+                    android:hint="11位手机号"
+                    android:textSize="15dip"
+                    android:inputType="phone"
+                    android:phoneNumber="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/peo_yzm"
+                    android:layout_below="@id/peo_phone"
+
+                    >
+                <EditText
+                    android:id="@+id/peo_yzm_1"
+                    android:drawableLeft="@drawable/forget_yanzh"
+                    android:drawablePadding="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="11"
+                    android:hint="手机验证码"
+                    android:textSize="15dip"
+                    android:inputType="phone"
+                    android:phoneNumber="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+                <Button
+                    android:id="@+id/huoqu"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:text="验证"
+                    android:onClick="click"
+                    android:background="@drawable/press_button_lan"
+                    android:layout_alignTop="@id/peo_yzm_1"
+                    android:layout_alignRight="@+id/peo_yzm_1"
+                    />
+                    </RelativeLayout>
+                <EditText
+                    android:id="@+id/passwd"
+                    android:drawableLeft="@drawable/forget_passwd"
+                    android:drawablePadding="20dp"
+                    android:layout_below="@id/peo_yzm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:password="true"
+                    android:hint="6-32位密码"
+                    android:textSize="15dip"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+                <EditText
+                    android:id="@+id/passwd_queding"
+                    android:drawableLeft="@drawable/forget_passwd"
+                    android:drawablePadding="20dp"
+                    android:layout_below="@id/passwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:password="true"
+                    android:hint="再次输入密码"
+                    android:textSize="15dip"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
+                <Button
+                    android:id="@+id/peo_login"
+
+                    android:layout_width="230dip"
+                    android:layout_height="50dip"
+                    android:text="登录"
+                    android:onClick="click"
+                    android:gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:layout_below="@+id/passwd_queding"
+                    android:background="#1bb5db"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xfkj.mrxuyaohui.xfkjdemo" >
+    //添加访问网络权限
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".activity.MyAppliction"
+        android:allowBackup="true"
+        android:icon="@drawable/xfkj_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".activity.Startpage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity
+            android:name=".activity.FristActivity"
+            android:label="@string/title_activity_quick_phone" >
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activity.Quick_phone"
+            android:label="@string/title_activity_quick_phone" >
+        </activity>
+        <activity
+            android:name=".activity.ZhenDuan"
+            android:label="@string/title_activity_zhen_duan" >
+        </activity>
+        <activity
+            android:name=".activity.Doctor_myCenter"
+            android:label="@string/title_activity_zhen_duan" >
+        </activity>
+        <activity
+            android:name=".activity.forget_select_shenfen"
+            android:label="@string/title_activity_zhen_duan" >
+        </activity>
+        <activity
+            android:name=".activity.YiShengZiXun"
+            android:label="@string/title_activity_yi_sheng_zi_xun"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.MyCenter"
+            android:label="@string/title_activity_my_center" >
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".activity.News_main"
+            android:label="@string/title_activity_news_main" >
+        </activity>
+        <activity
+            android:name=".activity.Collection"
+            android:label="@string/title_activity_collection" >
+        </activity>
+        <activity
+            android:name=".activity.History"
+            android:label="@string/title_activity_history" >
+        </activity>
+        <activity
+            android:name=".activity.Feedback"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".activity.Setting"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".activity.Login_foget_password1"
+            android:label="@string/title_activity_login_foget_password1" >
+        </activity>
+        <activity
+            android:name=".activity.Collection_Content"
+            android:label="@string/title_activity_collection__content" >
+        </activity>
+        <activity
+            android:name=".activity.Register_main"
+            android:label="@string/title_activity_register_main" >
+        </activity>
+        <activity
+            android:name=".activity.ZhenDuan_ceping"
+            android:label="@string/title_activity_zhen_duan_ceping" >
+        </activity>
+        <activity
+            android:name=".activity.Doctor_detail"
+            android:label="@string/title_activity_doctor_detail" >
+        </activity>
+        <activity
+            android:name=".activity.PeoHelp"
+            android:label="@string/title_activity_peo_help" >
+        </activity>
+        <activity
+            android:name=".activity.PeoStatement"
+            android:label="@string/title_activity_peo_statement" >
+        </activity>
+        <activity android:name=".activity.Depression_Test_detail" >
+        </activity>
+        <activity android:name=".activity.Deprssion_Test" >
+        </activity>
+        <activity
+            android:name=".activity.News_detail"
+            android:label="@string/title_activity_news_detail" >
+        </activity>
+        <activity
+            android:name=".activity.Select_picture"
+            android:label="@string/title_activity_select_picture"
+            android:theme="@style/myDialogTheme" >
+        </activity>
+        <activity
+            android:name=".activity.test.Anxiety_Test"
+            android:label="@string/title_activity_anxiety__test" >
+        </activity>
+        <activity
+            android:name=".activity.test.Pressuer_Test"
+            android:label="@string/title_activity_pressuer__test" >
+        </activity>
+
+        <service android:name=".service.PushSmsService" />
+
+        <activity
+            android:name=".activity.test.Frist_Depression_test"
+            android:label="@string/title_activity_frist__depression_test" >
+        </activity>
+        <activity
+            android:name=".activity.test.Frist_pressuer_test"
+            android:label="@string/title_activity_frist_pressuer_test" >
+        </activity>
+        <activity
+            android:name=".activity.test.Jiaolv_test"
+            android:label="@string/title_activity_jiaolv_test" >
+        </activity>
+        <activity
+            android:name=".activity.test.Heart_Test"
+            android:label="@string/title_activity_heart__test" >
+        </activity>
+        <activity
+            android:name=".activity.KeShiActivity"
+            android:label="@string/title_activity_ke_shi" >
+        </activity>
+        <activity
+            android:name=".activity.PayActivity"
+            android:label="@string/title_activity_pay" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxd6e1667021e43d6c" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <receiver android:name=".util.pay.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.test.Frist_JiaoLv_test"
+            android:label="@string/title_activity_frist__jiao_lv_test" >
+        </activity>
+        <activity
+            android:name=".activity.test.JiaoLv_test_detail"
+            android:label="@string/title_activity_jiao_lv_test_detail" >
+        </activity>
+        <activity
+            android:name=".activity.test.Heatr_test_detail"
+            android:label="@string/title_activity_heatr_test_detail" >
+        </activity>
+        <activity
+            android:name=".activity.test.Frist_Heart_test"
+            android:label="@string/title_activity_frist__heart_test" >
+        </activity>
+        <activity
+            android:name=".activity.test.Pressure_test_detail"
+            android:label="@string/title_activity_pressure_test_detail" >
+        </activity>
+        <activity
+            android:name=".activity.Forget_passwd_main"
+            android:label="@string/title_activity_forget_passwd_main" >
+        </activity>
+        <activity
+            android:name=".activity.Forget_passwd_1"
+            android:label="@string/title_activity_forget_passwd_1" >
+        </activity>
+        <activity
+            android:name=".forget_select_shenfen"
+            android:label="@string/title_activity_forget_select_shenfen" >
+        </activity>
+        <activity
+            android:name=".activity.Person_ziliao"
+            android:label="@string/title_activity_person_ziliao" >
+        </activity>
+        <activity
+            android:name=".activity.ZiLiao_XiuGai_passwd"
+            android:label="@string/title_activity_zi_liao__xiu_gai_passwd" >
+        </activity>
+        <activity
+            android:name=".util.time.DateTimePickerActivity"
+            android:label="@string/title_activity_date_time_picker" >
+        </activity>
+        <activity
+            android:name=".activity.XiuGai_Pass_Activity"
+            android:label="@string/title_activity_xiu_gai__pass_" >
+        </activity>
+        <activity
+            android:name=".activity.doc.Doc_ZiLiao"
+            android:label="@string/title_activity_doc__zi_liao" >
+        </activity>
+        <activity
+            android:name=".activity.PingJiaActivity"
+            android:label="@string/title_activity_ping_jia" >
+        </activity>
+        <activity
+            android:name=".activity.doc.Doc_Pingjia"
+            android:label="@string/title_activity_doc__pingjia" >
+        </activity>
+    </application>
+
+</manifest>

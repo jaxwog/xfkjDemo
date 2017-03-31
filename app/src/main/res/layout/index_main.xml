@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:id="@+id/image_1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- 首页图片浏览 -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/title"
+            android:text="首页"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#1bb5db"
+            android:textSize="20dp"
+            />
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/viewpager"
+                android:background="#33000000"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/image_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/point_group"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" >
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@id/image_1">
+
+        <Button
+            android:id="@+id/but_zixun"
+            android:layout_width="120dip"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/zixun"
+            android:text="咨询"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/but_tel"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/phonr"
+            android:text="电话"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:id="@+id/but_yuyue"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/yuyue"
+            android:text="医生预约"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/submain"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ececec"
+        android:gravity="center_vertical"
+        android:layout_below="@id/main">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shutiao"
+        android:layout_marginLeft="30dip"
+        android:background="#ececec" />
+    <Button
+
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:text="科室"
+        android:textSize="15dip"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:background="#ececec"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/submain1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/submain">
+
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_love"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qinggan"
+            android:text="情感"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_work"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/work"
+            android:text="工作"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_home"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/family"
+            android:text="家庭"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_xueye"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/xueye"
+            android:text="学业"
+            android:onClick="onClick"
+            android:textSize="10dip"
+            android:background="@drawable/login_button_selector"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/submain2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ececec"
+        android:gravity="center_vertical"
+        android:layout_below="@id/submain1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shutiao"
+            android:layout_marginLeft="30dip"
+            android:background="#ececec" />
+        <Button
+            android:id="@+id/keshi"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:text="年龄"
+            android:textSize="15dip"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:background="#ececec"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/submain3"
+        android:layout_below="@id/submain2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_yinger"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/yingyouer"
+            android:onClick="onClick"
+            android:background="@drawable/login_button_selector"/>
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_young"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/qingshaonian"
+            android:onClick="onClick"
+            android:background="@drawable/login_button_selector"/>
+
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_middle"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/zhongqingnian"
+            android:onClick="onClick"
+            android:background="@drawable/login_button_selector"/>
+
+        <Button
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_weight="1"
+            android:id="@+id/but_agedness"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/zhonglaonian"
+            android:onClick="onClick"
+            android:background="@drawable/login_button_selector"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

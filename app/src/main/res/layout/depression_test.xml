@@ -1,0 +1,120 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+    <TextView
+        android:textColor="#000000"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="抑郁指数自测"
+        android:textSize="21dp"
+        android:background="#1bb5db"
+        android:gravity="center"
+        android:id="@+id/title"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:layout_below="@id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="测试题目"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:lines="4"
+        android:textSize="15dp"
+        android:id="@+id/desc"
+        />
+    <LinearLayout
+        android:layout_below="@id/desc"
+        android:id="@+id/answer_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/answerGroup"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp">
+
+            <RadioButton
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:id="@+id/answerA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A 没有或很少时间"
+                android:button="@null" />
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:id="@+id/answerB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="B 小部分时间"/>
+
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:id="@+id/answerC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="C 相当多的时间"/>
+            <RadioButton
+                android:layout_marginTop="10dp"
+                android:textColor="@drawable/text_press_xiaoguo"
+                android:id="@+id/answerD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="D 绝大部分的时间或全部时间"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/answer_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+
+        <com.xfkj.mrxuyaohui.xfkjdemo.self_define.CircleProgressBar
+            android:id="@+id/pb"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true" />
+        <Button
+            android:layout_marginTop="70dp"
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="下一题"
+            android:onClick="click"
+            android:background="@drawable/press_button_lan"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_below="@id/pb"
+
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

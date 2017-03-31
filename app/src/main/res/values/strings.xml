@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //蓝色按钮点击时的效果            <drawable name="button_pressed">#1491b0</drawable>
+    <drawable name="clr_normal">#ffffff</drawable>
+    <drawable name="clr_pressed">#f1eee9</drawable>
+    //设置底部按钮点击时的效果            <drawable name="text_normal">#ffffff</drawable>
+    <drawable name="text_press">#1bb5db</drawable>
+    <drawable name="crcie">#cecece</drawable>
+
+
+    <string-array name="spingarr">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="app_name">零点心理</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_quick_phone">Quick_phone</string>
+    <string name="title_activity_zhen_duan">ZhenDuan</string>
+    <string name="title_activity_yi_sheng_zi_xun">YiShengZiXun</string>
+    <string name="title_activity_my_center">MyCenter</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_news_main">news_main</string>
+    <string name="title_activity_yu_yue">YuYue</string>
+    <string name="title_activity_collection">Collection</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_zhu_ce">ZhuCe</string>
+    <string name="title_activity_login_forget_password">Login_forget_password</string>
+    <string name="title_activity_login_foget_password1">Login_foget_password1</string>
+    <string name="title_activity_ceping">Ceping</string>
+    <string name="title_activity_frist">FristActivity</string>
+    <string name="title_activity_collection__content">Collection_Content</string>
+    <string name="title_activity_register_main">Register_main</string>
+    <string name="title_activity_zhen_duan_ceping">ZhenDuan_ceping</string>
+    <string name="title_activity_doctor_detail">Doctor_detail</string>
+    <string name="title_activity_peo_help">PeoHelp</string>
+    <string name="title_activity_peo_statement">PeoStatement</string>
+    <string name="title_activity_news_detail">News_detail</string>
+    <string name="title_activity_select_picture">Select_picture</string>
+    <string name="title_activity_anxiety__test">Anxiety_Test</string>
+    <string name="title_activity_pressuer__test">Pressuer_Test</string>
+    <string name="title_activity_frist__depression_test">Frist_Depression_test</string>
+    <string name="title_activity_frist_pressuer_test">Frist_pressuer_test</string>
+    <string name="title_activity_jiaolv_test">Jiaolv_test</string>
+    <string name="title_activity_heart__test">Heart_Test</string>
+    <string name="title_activity_ke_shi">KeShiActivity</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_frist__jiao_lv_test">Frist_JiaoLv_test</string>
+    <string name="title_activity_jiao_lv_test_detail">JiaoLv_test_detail</string>
+    <string name="title_activity_heatr_test_detail">Heatr_test_detail</string>
+    <string name="title_activity_frist__heart_test">Frist_Heart_test</string>
+    <string name="title_activity_pressure_test_detail">Pressure_test_detail</string>
+    <string name="title_activity_forget_passwd_main">Forget_passwd_main</string>
+    <string name="title_activity_forget_passwd_1">Forget_passwd_1</string>
+    <string name="title_activity_forget_select_shenfen">forget_select_shenfen</string>
+    <string name="title_activity_person_ziliao">Person_ziliao</string>
+    <string name="title_activity_zi_liao__xiu_gai_passwd">ZiLiao_XiuGai_passwd</string>
+    <string name="title_activity_date_time_picker">DateTimePickerActivity</string>
+    <string name="title_activity_xiu_gai__pass_">XiuGai_Pass_Activity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_startpage">Startpage</string>
+    <string name="title_activity_doc__zi_liao">Doc_ZiLiao</string>
+    <string name="title_activity_ping_jia">PingJiaActivity</string>
+    <string name="title_activity_doc__pingjia">Doc_Pingjia</string>
+
+</resources>

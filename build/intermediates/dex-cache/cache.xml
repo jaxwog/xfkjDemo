@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\libs\libammsdk.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d7c2f29c05b35e8c8713be2b81c41cf18f98b64a">
+        <dex dex="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\pre-dexed\debug\libammsdk-e1432238f024d93bcefb851efab568ba6f9cbe19.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\pre-dexed\debug\classes-8849239da8acd36380846c502e5b06f6ec8d6f18.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-aad37fc75fcc09b9b5db86f533182d770c09b8c5.jar" />
+    </item>
+    <item
+        jar="G:\android_studio_sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-72146d4afa0efdbcdd4642b6a382aaaba27d67fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Mr.xuyaohui\Desktop\2015-6-16\xfkjDemo\app\build\intermediates\pre-dexed\debug\classes-7eb2d711d0625e11f36de29bf5b6f23c1d597e0a.jar" />
+    </item>
+
+</items>
